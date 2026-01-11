@@ -12,8 +12,8 @@ import { Separator } from "@/components/ui/separator";
 import { Buffer } from 'buffer';
 
 // Polyfill Buffer for gray-matter
-if (typeof window !== 'undefined') {
-  window.Buffer = Buffer;
+if (typeof globalThis !== "undefined") {
+  (globalThis as typeof globalThis & { Buffer?: typeof Buffer }).Buffer = Buffer;
 }
 
 export default function EntryDetail() {
