@@ -1,0 +1,7 @@
+{
+  "name": "english-learning-library",
+  "compatibility_date": "2026-01-11",
+  "assets": {
+    "directory": "./dist"
+  }
+}
