@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "Bash(curl:*)",
+      "Bash(node -e \"\nimport\\(''vite''\\).then\\(async \\(vite\\) => {\n  const result = await vite.transformWithEsbuild\\(\\\\`\nconst files = import.meta.glob\\(''../content/entries/*.md'', { query: ''?raw'', import: ''default'' }\\);\nconsole.log\\(''Available files:'', Object.keys\\(files\\)\\);\n\\\\`, ''test.js'', { loader: ''js'' }\\);\n  console.log\\(result.code\\);\n}\\).catch\\(e => console.error\\(e\\)\\);\n\")",
+      "mcp__chrome_devtools__new_page",
+      "mcp__chrome_devtools__take_snapshot",
+      "mcp__chrome_devtools__list_console_messages",
+      "mcp__chrome_devtools__get_console_message",
+      "mcp__chrome_devtools__evaluate_script",
+      "Bash(ls:*)",
+      "mcp__chrome_devtools__navigate_page",
+      "Bash(npm install:*)",
+      "Bash(pnpm add:*)",
+      "mcp__chrome_devtools__take_screenshot"
+    ]
+  }
+}
